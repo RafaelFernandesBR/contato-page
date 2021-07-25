@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastre-se</title>
+</head>    
+<body>
+<div>
+    <h1>Cadastro.</h1>
+    <p>Preencha o formulário de cadastro.</p>
+</div>
+
+<div>
+    <form id="dados">
+        <input type="text" placeholder="Nome completo" id="nome" required><br />
+        <input type="email" placeholder="email" id="mail" required><br />
+        <p>Qual o seu sexo?<br /></p>
+        <input type="radio" id="fm" name="status" value="fm">
+        <label for="fm">Feminino.</label><br />
+        <input type="radio" id="mx" name="status" value="mx">
+        <label for="mx">Masculino.</label><br />
+        <input type="radio" id="outro" name="status" value="outro">
+        <label for="outro">Outro.</label><br />
+        <h3>Documentos pessoais.</h3>
+        <input type="text" placeholder="CPF, apenas número" id="cpf" required><br />
+        <input type="text" placeholder="RG" id="rg" required><br />
+        <h3>Dados para contato.</h3>
+        <input type="tel" placeholder="Telefone fixo, se tiver." id="tel_F"><br />
+        <input type="text" placeholder="Celular." id="tel_C" required><br />
+        <h3>Endereço.</h3>
+        <input type="text" placeholder="CEP" id="cep" required><br />
+        <input type="text" placeholder="endereço" id="end" required><br />
+        <input type="text" placeholder="Bairro" id="bairro" required><br />
+        <input type="number" placeholder="Número" id="numero"><br />
+        <input type="text" placeholder="Cidade" id="city" required><br />
+        <input type="text" placeholder="Estado" id="estadu" required><br />
+        <input type="submit" accesskey="E" value="Enviar" onclick="enviado(nome)">
+        <input type="reset" accesskey="P" value="Apagar formulário" />
+    </form>
+</div>
+<footer>
+    <p> 2021 | Rafael Fernandes </p>
+  </footer>
+</body>
+<script src="js/validate.js"></script>
+<script src="js/envia.js"></script>
+</html>
